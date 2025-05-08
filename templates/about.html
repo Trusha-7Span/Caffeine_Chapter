@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Caffeine Chapter</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>About Us</h1>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/menu">Menu</a></li>
+                    <li><a href="/about">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="about">
+        <div class="container">
+            <h2>Our Story</h2>
+            <p>
+                Welcome to Caffeine Chapter, where every cup of coffee tells a story. 
+                Founded in 2020, we are passionate about crafting the perfect brew for every moment. 
+                From sourcing the finest beans to creating a cozy atmosphere, we are dedicated to making your coffee experience unforgettable.
+            </p>
+            <div class="about-images">
+                <img src="{{ url_for('static', filename='images/team.jpg') }}" alt="Our Team">
+                <img src="{{ url_for('static', filename='images/coffee-shop.jpg') }}" alt="Our Coffee Shop">
+            </div>
+        </div>
+    </section>
+
+    <section class="values">
+        <div class="container">
+            <h2>What We Stand For</h2>
+            <div class="values-cards">
+                <div class="value-card">
+                    <img src="{{ url_for('static', filename='images/quality.jpg') }}" alt="Quality">
+                    <h3>Quality</h3>
+                    <p>We source only the finest beans and ensure every cup is brewed to perfection.</p>
+                </div>
+                <div class="value-card">
+                    <img src="{{ url_for('static', filename='images/community.jpg') }}" alt="Community">
+                    <h3>Community</h3>
+                    <p>We believe in creating a space where everyone feels welcome and connected.</p>
+                </div>
+                <div class="value-card">
+                    <img src="{{ url_for('static', filename='images/sustainability.jpg') }}" alt="Sustainability">
+                    <h3>Sustainability</h3>
+                    <p>We are committed to environmentally friendly practices in everything we do.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Caffeine Chapter. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

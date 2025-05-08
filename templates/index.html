@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caffeine Chapter</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Caffeine Chapter</h1>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/menu">Menu</a></li>
+                    <li><a href="/about">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Where Every Sip Tells a Story</h2>
+            <p>Discover the perfect brew for every moment.</p>
+            <a href="/menu" class="btn">Explore Our Menu</a>
+        </div>
+    </section>
+
+    <section class="featured">
+        <div class="container">
+            <h2>Our Featured Brews</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="{{ url_for('static', filename='images/espresso.jpg') }}" alt="Espresso">
+                    <h3>Prologue Shot</h3>
+                    <p>Rich and bold espresso to kickstart your day.</p>
+                </div>
+                <div class="card">
+                    <img src="{{ url_for('static', filename='images/latte.jpg') }}" alt="Latte">
+                    <h3>The Bestseller</h3>
+                    <p>A creamy latte that feels like a warm hug.</p>
+                </div>
+                <div class="card">
+                    <img src="{{ url_for('static', filename='images/coldbrew.jpg') }}" alt="Cold Brew">
+                    <h3>Cliffhanger</h3>
+                    <p>Refreshing cold brew for those hot days.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Caffeine Chapter. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

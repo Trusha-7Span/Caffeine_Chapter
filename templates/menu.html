@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Caffeine Chapter</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Our Menu</h1>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/menu">Menu</a></li>
+                    <li><a href="/about">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="menu">
+        <div class="container">
+            <h2>Explore Our Delicious Offerings</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="{{ url_for('static', filename='images/espresso.jpg') }}" alt="Espresso">
+                    <div class="menu-info">
+                        <h3>Espresso</h3>
+                        <p class="price">$3.00</p>
+                        <p class="ingredients">Ingredients: Freshly ground coffee beans</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="{{ url_for('static', filename='images/latte.jpg') }}" alt="Latte">
+                    <div class="menu-info">
+                        <h3>Latte</h3>
+                        <p class="price">$4.50</p>
+                        <p class="ingredients">Ingredients: Espresso, steamed milk, foam</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="{{ url_for('static', filename='images/coldbrew.jpg') }}" alt="Cold Brew">
+                    <div class="menu-info">
+                        <h3>Cold Brew</h3>
+                        <p class="price">$4.00</p>
+                        <p class="ingredients">Ingredients: Cold-brewed coffee, ice</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="{{ url_for('static', filename='images/cappuccino.jpg') }}" alt="Cappuccino">
+                    <div class="menu-info">
+                        <h3>Cappuccino</h3>
+                        <p class="price">$4.00</p>
+                        <p class="ingredients">Ingredients: Espresso, steamed milk, foam</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Caffeine Chapter. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
